@@ -1,0 +1,150 @@
+html,body{
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+    background-image: url(../photo/mainbackgrond.jpg);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 200px;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+        list-style-type: none;
+        padding: 5px;
+        margin: 0 15px;
+        font-size: 22px;
+        a{
+            text-decoration:none;
+            color: black;
+        }
+    }
+}
+.navbar li:hover{
+    background-color: orange;
+}
+.all{
+    background-color: white;
+}
+.container .main-picture img{
+    width: 100%;
+    height: auto;
+}
+.promt{
+    display: flex;
+    .col-4{
+        position: relative;
+    }
+}
+.promt .col-4:nth-child(1)::after,.promt .col-4:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    background: orange;
+    width: 5px;
+    height: 100%;
+}
+.promt-pic img{
+    height: 100px;
+    width: 100PX;
+}
+.hot-product{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    h2{
+        position: relative;
+    }
+}
+.hot-product h2::before,
+.hot-product h2::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: orange;
+  width: 505px;
+  height: 1px;
+}
+.hot-product h2::before{
+    right: 120%;
+}
+.hot-product h2::after{
+    left: 120%;
+}
+.hot-pic .col-3{
+    justify-content: center;
+}
+.hot-pic img{
+    height: 150px;
+    width: 150px;
+}
+.description h3{
+    color: orange;
+}
+.hot-price{
+    color: orange;
+}
+.main-pic{
+    display: flex;
+}
+.photo img{
+    height:100%;
+}
+.footer{
+    background-image: url(../photo/wood-footer.jpg);
+    padding-top: 20px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li{
+        list-style-type: none;
+        flex:1;
+        width: 33.3%;
+        min-width: 33.3%;
+        max-width: 33.3%;
+        margin: 5px 0;
+    }
+}
+hr{
+    border: 2px solid black;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon img{
+    width: 20px;
+}
+@media (max-width:576px)
+{
+    .hot-product{
+        display: flex;
+    }
+    .navbar li{
+        flex:1;
+        width: 33.3%;
+        min-width: 33.3%;
+        max-width: 33.3%;
+
+    }
+}

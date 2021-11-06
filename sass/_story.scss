@@ -1,0 +1,75 @@
+html,body{
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+    background-image:url(../);
+    background-repeat:no-repeat;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 200px;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    li{
+        list-style-type: none;
+        padding: 5px;
+        margin: 0 15px;
+        font-size: 22px;
+        a{
+            text-decoration:none;
+            color: black;
+        }
+    }
+}
+.navbar li:hover{
+    background-color: orange;
+}
+.all{
+    background-color: white;
+}
+.main{
+    background-color: #E6AA75;
+    margin: 60px 0;
+}
+.main{
+    padding: 30px 0;
+}
+.story .content{
+    writing-mode: vertical-rl;
+    font-size: 35px;
+}
+.story .title{
+    writing-mode: vertical-rl;
+    position: relative;
+    h1{
+        position: absolute;
+        top: -90px;
+        font-weight:bold;
+        font-size: 50px;
+    }
+}
+@media (max-width:576px)
+{
+    .story .title{
+        writing-mode:inherit;
+        h1{
+            font-weight:bold;
+            font-size: 50px;
+        }
+    }
+}
